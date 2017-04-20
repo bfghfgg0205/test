@@ -8,14 +8,14 @@ import org.thymeleaf.processor.element.IElementTagStructureHandler;
 import org.thymeleaf.templatemode.TemplateMode;
 
 import com.example.services.TranslateService;
-import com.example.services.impl.TranslateServiceImpl;
 
 public class TranslateProcessor extends AbstractAttributeTagProcessor {
-	
-	TranslateService service = new TranslateServiceImpl();
 
-	public TranslateProcessor(String dialectPrefix) {
+	private TranslateService service;
+
+	public TranslateProcessor(String dialectPrefix, TranslateService service) {
 		super(TemplateMode.HTML, dialectPrefix, null, false, "trans", true, 10000, true);
+		this.service = service;
 	}
 
 	@Override
