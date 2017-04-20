@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:trans="http://www.thymeleaf.trans">
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
 
     <title>Spring MVC</title>
 
     <!-- Bootstrap Core CSS -->
-    <link th:href="@{vendor/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+    <link th:href="@{~/vendor/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
 
     <!-- Theme CSS -->
-    <link th:href="@{css/clean-blog.min.css}" rel="stylesheet">
+    <link th:href="@{~/css/clean-blog.min.css}" rel="stylesheet"/>
 
     <!-- Custom Fonts -->
-    <link th:href="@{vendor/font-awesome/css/font-awesome.min.css}" th:attr="rel='stylesheet',type='text/css'">
-    <link th:href="@{https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic}" th:attr="rel='stylesheet',type='text/css'">
-    <link th:href="@{https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800}" th:attr="rel='stylesheet',type='text/css'">
+    <link th:href="@{~/vendor/font-awesome/css/font-awesome.min.css}" th:attr="rel='stylesheet',type='text/css'"/>
+    <link th:href="@{https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic}" th:attr="rel='stylesheet',type='text/css'"/>
+    <link th:href="@{https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800}" th:attr="rel='stylesheet',type='text/css'"/>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -75,7 +75,7 @@
                 <div th:attr="class='col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1'">
                     <div th:attr="class='site-heading'">
                         <h1>Spring MVC</h1>
-                        <hr th:attr="class='small'">
+                        <hr th:attr="class='small'"/>
                         <span th:attr="class='subheading'">With Thymeleaf render</span>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                     </a>
                     <p th:attr="class='post-meta'">Posted by <a th:href="@{#}">LamTH2</a> on March 22, 2017</p>
                 </div>
-                <hr>
+                <hr/>
                 <div th:attr="class='post-preview'">
                     <a th:href="@{/login}">
                         <h2 th:attr="class='post-title'">
@@ -110,7 +110,7 @@
                     </a>
                     <p th:attr="class='post-meta'">Posted by <a th:href="@{#}">LamTH2</a> on March 22, 2017</p>
                 </div>
-                <hr>
+                <hr/>
                 <div th:attr="class='post-preview'">
                     <a th:href="@{/post}">
                         <h2 th:attr="class='post-title'">
@@ -121,8 +121,9 @@
                         </h3>
                     </a>
                     <p th:attr="class='post-meta'">Posted by <a th:href="@{#}">LamTH2</a> on March 22, 2017</p>
+                    <p trans:trans="1"></p>
                 </div>
-                <hr>
+                <hr/>
                 <!-- Pager -->
                 <ul class="pager">
                     <li class="next">
@@ -133,7 +134,7 @@
         </div>
     </div>
 
-    <hr>
+    <hr/>
 
     <!-- Footer -->
     <footer>
